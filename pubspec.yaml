@@ -1,0 +1,43 @@
+name: todolist_flutter
+description: TodoList — Flutter mobile client (BLoC + Clean Architecture), same Firebase backend as the web app.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.6 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Architecture — same as the mentor's template
+  flutter_bloc: ^8.1.3
+  bloc: ^8.1.4
+  get_it: ^7.6.0
+  dartz: ^0.10.1
+  equatable: ^2.0.5
+  auto_route: ^9.2.2
+  freezed: ^2.5.2
+  freezed_annotation: ^2.4.4
+  build_runner:
+  auto_route_generator: ^9.0.0
+
+  # Firebase — same project as the web app
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.4
+
+  # Formatting / fonts to match the web app's visual design
+  intl: ^0.19.0
+  google_fonts: ^6.2.1
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  mocktail: ^1.0.3
+
+flutter:
+  uses-material-design: true

@@ -21,5 +21,4 @@ pubspec.lock
 # Not gitignored by default in the mentor's template (it commits them),
 # so remove these two lines if you want to commit generated output the
 # same way that template does.
-**/*.freezed.dart
-**/*.gr.dart
+

@@ -82,7 +82,7 @@ class _AddTaskSheetState extends State<_AddTaskSheet> {
             ),
             const SizedBox(height: 12),
             DropdownButtonFormField<String>(
-              value: _category,
+              initialValue: _category,
               decoration: const InputDecoration(labelText: 'Category'),
               items: const [
                 DropdownMenuItem(value: 'Work', child: Text('Work')),
@@ -93,7 +93,7 @@ class _AddTaskSheetState extends State<_AddTaskSheet> {
             if (_category == 'Work') ...[
               const SizedBox(height: 12),
               DropdownButtonFormField<String>(
-                value: _workLocation,
+                initialValue: _workLocation,
                 decoration: const InputDecoration(labelText: 'Work Location'),
                 items: const [
                   DropdownMenuItem(value: 'Work from Home', child: Text('Work from Home')),

@@ -34,7 +34,7 @@ class SettingsPanel extends StatelessWidget {
                   ],
                 ),
               );
-              if (confirmed == true) {
+              if (confirmed == true && context.mounted) {
                 if (state.hasCompanyTasks) {
                   ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
                     content: Text(

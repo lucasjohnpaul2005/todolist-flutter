@@ -189,7 +189,7 @@ class _TodoView extends StatelessWidget {
                               ],
                             ),
                           );
-                          if (confirmed == true) {
+                          if (confirmed == true && context.mounted) {
                             context.read<TaskBloc>().add(TaskEvent.deleteTask(id: id));
                           }
                         },

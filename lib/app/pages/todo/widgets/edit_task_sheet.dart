@@ -98,7 +98,7 @@ class _EditTaskSheetState extends State<_EditTaskSheet> {
             if (isWork) ...[
               const SizedBox(height: 12),
               DropdownButtonFormField<String>(
-                value: _workLocation,
+                initialValue: _workLocation,
                 decoration: const InputDecoration(labelText: 'Work Location'),
                 items: const [
                   DropdownMenuItem(value: 'Work from Home', child: Text('Work from Home')),
